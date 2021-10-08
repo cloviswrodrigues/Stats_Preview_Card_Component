@@ -34,7 +34,7 @@ body {
     width: 320px;
     height: 600px;
     background-color: var(--dark_desaturated_blue);
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -99,4 +99,49 @@ body {
     font-size: .7rem;
     margin-top: .2rem;
     
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 700px;
+        height: 300px;
+        display: flex;
+        flex-direction: row-reverse;        
+    }
+
+    .top {
+        height: 100%;
+        width: 50%;        
+        background-image: url(../assets/image-header-desktop.jpg);
+    }
+
+    .content {
+        position: relative;
+        width: 50%;
+        padding: 2.5rem 3.5rem 2.5rem 2.5rem;
+        text-align: left;
+    }
+
+    .content p{
+        font-size: .6rem;
+        line-height: 1rem;
+    }
+
+    .content ul {
+        margin-top: 4rem;
+        flex-direction: row;
+    }
+
+    .content ul li {
+        margin-right: 3rem;
+    }
+
+    .content ul li h2{
+        font-size: .8rem;
+     }
+     
+    .content ul li p {         
+        font-size: .5rem;
+        margin-top: 0;         
+    }
 }
